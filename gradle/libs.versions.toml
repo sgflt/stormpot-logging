@@ -1,0 +1,29 @@
+[versions]
+# Core dependencies
+stormpot = "3.2"
+slf4j = "2.0.17"
+
+# Test dependencies
+junit = "5.13.3"
+assertj = "3.26.3"
+mockito = "5.14.2"
+logback = "1.5.15"
+
+[libraries]
+# Core libraries
+stormpot = { module = "com.github.chrisvest:stormpot", version.ref = "stormpot" }
+slf4j = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+
+# Test libraries
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-junit-jupiter = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+[bundles]
+testing = ["junit-jupiter", "assertj-core", "mockito-core", "mockito-junit-jupiter"]
+
+[plugins]
+# Add any plugins here if needed in the future
