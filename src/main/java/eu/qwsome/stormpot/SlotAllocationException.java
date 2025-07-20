@@ -7,7 +7,7 @@ public class SlotAllocationException extends RuntimeException {
   private static final long serialVersionUID = -1L;
 
 
-  public SlotAllocationException(final String message) {
+  SlotAllocationException(final String message) {
     super(message);
   }
 }
